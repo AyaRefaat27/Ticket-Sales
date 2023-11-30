@@ -8,24 +8,20 @@
   /* Colors */
   --first-color: #8a74f9;
   --first-color-alt: hsl(129, 42%, 94%);
-  --second-color: hsla(35, 45%, 61%, 0.871);
   --title-color: hsl(0, 0%, 13%);
   --text-color: #7b7b7b;
   --text-color-light: hsl(60, 1%, 56%);
   --body-color: #f4f4f4;
-  --container-color: hsl(0, 0%, 93%);
   --border-color: hsl(129, 36%, 85%);
   --border-color-alt: hsl(113, 15%, 90%);
 
   /* Font & Typography */
   --body-font: "Alkatra", cursive;
   --second-font: "Courgette", cursive;
-  --big-font-size: 3.5rem;
   --h1-font-size: 2.75rem;
   --h2-font-size: 2rem;
   --h3-font-size: 1.75rem;
   --h4-font-size: 1.375rem;
-  --large-font-size: 1.125rem;
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.75rem;
@@ -222,7 +218,7 @@ table {
 /* Chart */
 
 .card {
-  width: 850px;
+  width: 800px;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
@@ -250,7 +246,7 @@ table {
 }
 
 .ticket_card {
-  /* width: 400px; */
+  width: 370px;
   height: 300px;
   padding: 20px;
   border: 1px solid #ccc;
@@ -294,7 +290,7 @@ table {
 
 /* Table Filter */
 .table_filter {
-  width: 500px;
+  width: 350px;
 }
 
 .arrow_icon {
@@ -420,6 +416,7 @@ input:checked + .slider:before {
 
 .table__container {
   overflow-x: auto;
+  border-radius: 10px 10px 0 0;
 }
 
 .table {
@@ -438,12 +435,6 @@ input:checked + .slider:before {
   justify-content: space-between;
   margin-bottom: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 1024px) {
-  .table__footer {
-    width: 1080px;
-  }
 }
 
 .table tr {
@@ -467,7 +458,6 @@ input:checked + .slider:before {
 .table tr th:nth-child(1),
 .table tr td:nth-child(1) {
   width: 50px;
-  border-radius: 20px 0 0 20px;
 }
 
 .table tr th:nth-child(2),
@@ -503,8 +493,6 @@ input:checked + .slider:before {
 .table tr th:nth-child(8),
 .table tr td:nth-child(8) {
   width: 200px;
-
-  border-radius: 0 20px 20px 0;
 }
 
 .table__image {
@@ -658,4 +646,42 @@ input:checked + .slider:before {
   width: 100px;
   outline: none;
   cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .table__footer {
+    width: 1080px;
+  }
+
+  .card {
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 400px;
+  }
+  .ticket_card {
+    width: 300px;
+  }
+  .share_btn {
+    /* padding: 2px; */
+    width: 100px;
+  }
+
+  .bottom_details {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .card {
+    width: 300px;
+  }
+
+  .bottom_details {
+    gap: 30px;
+  }
 }

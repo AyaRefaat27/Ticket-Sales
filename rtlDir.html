@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,6 @@
     <title>Tickets Sales</title>
   </head>
   <body>
-    <!-- Change Direction -->
     <div class="dropdown">
       <div class="dropbtn">
         <i class="fa-solid fa-language"></i>
@@ -18,13 +17,12 @@
       </div>
     </div>
 
-    <!-- Ticket Number -->
     <section class="container section-lg flex top_btn">
       <div class="flex">
         <span class="arrow_icon">
           <img src="./assets/SVG/rightarrow.svg" alt="" />
         </span>
-        <span> Ticket Number #2342 </span>
+        <span> تذكرة رقم #2342 </span>
       </div>
 
       <div class="flex">
@@ -32,27 +30,28 @@
           <span>
             <img src="./assets/SVG/edit.svg" alt="" />
           </span>
-          <span> Edit </span>
+          <span> تعديل </span>
         </div>
       </div>
     </section>
 
-    <!-- Chart -->
     <section class="container section-lg flex">
       <div class="flex top_btns">
         <div class="card">
           <div class="details">
             <div class="select_box flex">
               <div>
-                <h3 class="table__title">Statics</h3>
-                <p class="table__description">11-30-2023</p>
+                <h3 class="table__title">إحصائيات إستخدام القسيمة</h3>
+                <p class="table__description">
+                  05 يوليو , 2023 - 05 أغسطس , 2023
+                </p>
               </div>
 
               <div class="custom-select">
                 <select>
-                  <option value="20">Yearly</option>
-                  <option value="40">Mothly</option>
-                  <option value="60">Daily</option>
+                  <option value="20">سنويا</option>
+                  <option value="40">شهريا</option>
+                  <option value="60">يوميا</option>
                 </select>
               </div>
             </div>
@@ -64,7 +63,7 @@
 
         <div class="ticket_card flex">
           <div class="top_details flex">
-            <p>The Ticket of the Film</p>
+            <p>Tعرض التذكرة الخاصة بالفيلم</p>
             <div class="icon">
               <img src="./assets/SVG/delete.svg" alt="" />
             </div>
@@ -79,7 +78,7 @@
             </div>
           </div>
 
-          <p>Active untill 15 July 2015</p>
+          <p>فعال حتي 15 يوليو 2023</p>
           <div class="divider"></div>
 
           <div class="flex bottom_details">
@@ -88,13 +87,13 @@
             </div>
 
             <div>
-              <p>Sale</p>
+              <p>خصم</p>
               <div class="flex" style="gap: 10px">
                 <p>25%</p>
                 <div class="share_btn">
                   <img src="./assets/SVG/share.svg" alt="" />
 
-                  <span>Share</span>
+                  <span>مشاركة</span>
                 </div>
               </div>
             </div>
@@ -103,16 +102,15 @@
       </div>
     </section>
 
-    <!-- Filter Table -->
     <section class="container section-lg flex top_btns">
       <div class="table_filter flex">
-        <p>Tickets</p>
+        <p>مبيعات التذاكر</p>
         <div class="search">
           <input
             type="text"
             name=""
             id=""
-            placeholder="Search for items.."
+            placeholder="بحث عن ..."
             class="form__input"
           />
 
@@ -133,7 +131,7 @@
       </div>
 
       <div class="flex">
-        <p>Active</p>
+        <p>مفعلة</p>
         <div>
           <label class="switch">
             <input type="checkbox" checked />
@@ -141,27 +139,26 @@
           </label>
         </div>
         <div>
-          <a href="#" class="btn"> Book New Ticket </a>
+          <a href="#" class="btn"> حجز تذكرة جديدة </a>
         </div>
       </div>
     </section>
 
-    <!-- Table -->
     <section class="container section-lg table_section">
       <div class="table__container">
         <table class="table">
           <tr class="table__head">
             <th>#</th>
-            <th>User</th>
-            <th>Ticket Number</th>
+            <th>المستخدم</th>
+            <th>رقم التذكرة</th>
             <th>
-              Ticket Value
+              قيمى التذكرة
               <img src="./assets/SVG/arrowUp-Down.svg" alt="" />
             </th>
-            <th>Cinmas</th>
-            <th>Person</th>
-            <th>Buying Time</th>
-            <th>Ticket</th>
+            <th>السينمات</th>
+            <th>عدد الأشخاص</th>
+            <th>عدد مرات الشراء</th>
+            <th>التذكرة</th>
           </tr>
 
           <tr>
@@ -174,7 +171,7 @@
                 <img src="avatar-1.jpg" alt="" class="table__image" />
               </div>
               <div>
-                <h3 class="table__title">Ahmed Mohamed</h3>
+                <h3 class="table__title">أحمد محمود</h3>
 
                 <p class="table__description">01025048330</p>
               </div>
@@ -186,18 +183,15 @@
 
             <td>
               <div class="cinema product__actions">
-                <span
-                  class="action__btn"
-                  aria-label=" Lorem ipsum dolor sit amet"
-                >
-                  Lorem ipsum...
+                <span class="action__btn" aria-label=" صيدناوي مول , برج العرب">
+                  سينما مصر , مول العرب , برج الأطنان , سرايا القبة ...
                 </span>
               </div>
             </td>
 
             <td>1</td>
 
-            <td>One Time</td>
+            <td>مرة واحدة</td>
 
             <td>
               <div class="flex ticket">
@@ -209,7 +203,113 @@
                 </div>
 
                 <div>
-                  <h3 class="table__title">Ticket_45.pdf</h3>
+                  <h3 class="table__title">تذكرة رقم 45.pdf</h3>
+
+                  <p class="table__description">9mb-PDF</p>
+                </div>
+
+                <div class="product__actions action__btn" aria-label="Download">
+                  <img src="./assets/SVG/download.svg" alt="" />
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td
+              class="flex"
+              style="align-items: center; justify-content: center"
+            >
+              <div>
+                <img src="avatar-1.jpg" alt="" class="table__image" />
+              </div>
+              <div>
+                <h3 class="table__title">أحمد محمود</h3>
+
+                <p class="table__description">01025048330</p>
+              </div>
+            </td>
+
+            <td>C-101</td>
+
+            <td>40$</td>
+
+            <td>
+              <div class="cinema product__actions">
+                <span class="action__btn" aria-label=" صيدناوي مول , برج العرب">
+                  سينما مصر , مول العرب , برج الأطنان , سرايا القبة ...
+                </span>
+              </div>
+            </td>
+
+            <td>1</td>
+
+            <td>مرة واحدة</td>
+
+            <td>
+              <div class="flex ticket">
+                <div
+                  class="table_icon product__actions action__btn"
+                  aria-label="Quick View"
+                >
+                  <img src="./assets/SVG/ticket.svg" alt="" />
+                </div>
+
+                <div>
+                  <h3 class="table__title">تذكرة رقم 45.pdf</h3>
+
+                  <p class="table__description">9mb-PDF</p>
+                </div>
+
+                <div class="product__actions action__btn" aria-label="Download">
+                  <img src="./assets/SVG/download.svg" alt="" />
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td
+              class="flex"
+              style="align-items: center; justify-content: center"
+            >
+              <div>
+                <img src="avatar-1.jpg" alt="" class="table__image" />
+              </div>
+              <div>
+                <h3 class="table__title">أحمد محمود</h3>
+
+                <p class="table__description">01025048330</p>
+              </div>
+            </td>
+
+            <td>C-101</td>
+
+            <td>40$</td>
+
+            <td>
+              <div class="cinema product__actions">
+                <span class="action__btn" aria-label=" صيدناوي مول , برج العرب">
+                  سينما مصر , مول العرب , برج الأطنان , سرايا القبة ...
+                </span>
+              </div>
+            </td>
+
+            <td>1</td>
+
+            <td>مرة واحدة</td>
+
+            <td>
+              <div class="flex ticket">
+                <div
+                  class="table_icon product__actions action__btn"
+                  aria-label="Quick View"
+                >
+                  <img src="./assets/SVG/ticket.svg" alt="" />
+                </div>
+
+                <div>
+                  <h3 class="table__title">تذكرة رقم 45.pdf</h3>
 
                   <p class="table__description">9mb-PDF</p>
                 </div>
@@ -231,7 +331,7 @@
                 <img src="avatar-1.jpg" alt="" class="table__image" />
               </div>
               <div>
-                <h3 class="table__title">Ahmed Mohamed</h3>
+                <h3 class="table__title">أحمد محمود</h3>
 
                 <p class="table__description">01025048330</p>
               </div>
@@ -243,18 +343,15 @@
 
             <td>
               <div class="cinema product__actions">
-                <span
-                  class="action__btn"
-                  aria-label=" Lorem ipsum dolor sit amet"
-                >
-                  Lorem ipsum...
+                <span class="action__btn" aria-label=" صيدناوي مول , برج العرب">
+                  سينما مصر , مول العرب , برج الأطنان , سرايا القبة ...
                 </span>
               </div>
             </td>
 
             <td>1</td>
 
-            <td>One Time</td>
+            <td>مرة واحدة</td>
 
             <td>
               <div class="flex ticket">
@@ -266,121 +363,7 @@
                 </div>
 
                 <div>
-                  <h3 class="table__title">Ticket_45.pdf</h3>
-
-                  <p class="table__description">9mb-PDF</p>
-                </div>
-
-                <div class="product__actions action__btn" aria-label="Download">
-                  <img src="./assets/SVG/download.svg" alt="" />
-                </div>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td>1</td>
-            <td
-              class="flex"
-              style="align-items: center; justify-content: center"
-            >
-              <div>
-                <img src="avatar-1.jpg" alt="" class="table__image" />
-              </div>
-              <div>
-                <h3 class="table__title">Ahmed Mohamed</h3>
-
-                <p class="table__description">01025048330</p>
-              </div>
-            </td>
-
-            <td>C-101</td>
-
-            <td>40$</td>
-
-            <td>
-              <div class="cinema product__actions">
-                <span
-                  class="action__btn"
-                  aria-label=" Lorem ipsum dolor sit amet"
-                >
-                  Lorem ipsum...
-                </span>
-              </div>
-            </td>
-
-            <td>1</td>
-
-            <td>One Time</td>
-
-            <td>
-              <div class="flex ticket">
-                <div
-                  class="table_icon product__actions action__btn"
-                  aria-label="Quick View"
-                >
-                  <img src="./assets/SVG/ticket.svg" alt="" />
-                </div>
-
-                <div>
-                  <h3 class="table__title">Ticket_45.pdf</h3>
-
-                  <p class="table__description">9mb-PDF</p>
-                </div>
-
-                <div class="product__actions action__btn" aria-label="Download">
-                  <img src="./assets/SVG/download.svg" alt="" />
-                </div>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td>1</td>
-            <td
-              class="flex"
-              style="align-items: center; justify-content: center"
-            >
-              <div>
-                <img src="avatar-1.jpg" alt="" class="table__image" />
-              </div>
-              <div>
-                <h3 class="table__title">Ahmed Mohamed</h3>
-
-                <p class="table__description">01025048330</p>
-              </div>
-            </td>
-
-            <td>C-101</td>
-
-            <td>40$</td>
-
-            <td>
-              <div class="cinema product__actions">
-                <span
-                  class="action__btn"
-                  aria-label=" Lorem ipsum dolor sit amet"
-                >
-                  Lorem ipsum...
-                </span>
-              </div>
-            </td>
-
-            <td>1</td>
-
-            <td>One Time</td>
-
-            <td>
-              <div class="flex ticket">
-                <div
-                  class="table_icon product__actions action__btn"
-                  aria-label="Quick View"
-                >
-                  <img src="./assets/SVG/ticket.svg" alt="" />
-                </div>
-
-                <div>
-                  <h3 class="table__title">Ticket_45.pdf</h3>
+                  <h3 class="table__title">تذكرة رقم 45.pdf</h3>
 
                   <p class="table__description">9mb-PDF</p>
                 </div>
@@ -394,7 +377,7 @@
         </table>
         <div class="table__footer flex">
           <div class="select_box flex">
-            <p>Present</p>
+            <p>عرض</p>
             <div class="custom-select">
               <select>
                 <option value="20">20</option>
@@ -412,7 +395,7 @@
                 <option value="250">250</option>
               </select>
             </div>
-            <p>Row from 250</p>
+            <p>من اصل 250</p>
           </div>
           <div>
             <ul class="pagination">
